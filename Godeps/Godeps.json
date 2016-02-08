@@ -1,0 +1,11 @@
+{
+	"ImportPath": "github.com/cedricziel/snoop-bott",
+	"GoVersion": "go1.5.3",
+	"Deps": [
+		{
+			"ImportPath": "github.com/tucnak/telebot",
+			"Comment": "v1.0-39-gce6937b",
+			"Rev": "ce6937b17c94ab473eba98d496e0ef03f3415022"
+		}
+	]
+}
