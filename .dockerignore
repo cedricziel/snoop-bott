@@ -1,3 +1,4 @@
 .git
 Godeps
 *.go
+tmp
