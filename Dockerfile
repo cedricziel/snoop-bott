@@ -1,5 +1,9 @@
-FROM scratch
-ADD snoop-bott /
-ENV TELEGRAM_TOKEN ""
+FROM alpine:3.3
 
-CMD ["/snoop-bott]
+RUN apk add --update bash curl && rm -rf /var/cache/apk/*
+ADD entrypoint.sh /
+ADD snoop-bott /
+
+WORKDIR /
+
+CMD ["/entrypoint.sh"]

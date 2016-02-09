@@ -18,6 +18,8 @@ func main() {
 		println("No telegram bot secret token. Set one using the 'TELEGRAM_TOKEN' environment variable")
 	}
 
+	println("Using token" + token)
+
 	bot, err := telebot.NewBot(token)
 	if err != nil {
 		println(err)
